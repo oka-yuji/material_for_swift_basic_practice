@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var a: String = ""
+    @State var b: String? = ""
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            Button(action: {
+               a = "not optional"
+                b = "optional"
+            }, label: {
+                Text("Button")
+            })
+            Text(a)
+            //強制アンラップ
+            Text(b!)
+            //nilの場合空を入れる処理をした安全なアンラップ
+            Text(b ?? "")
+        }
     }
 }
 
