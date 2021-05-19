@@ -1,0 +1,2 @@
+# material_for_swift_basic_practice
+swiftの基礎学習の為の教材を作ってOP公開しています。ご自由にお使い下さい！
